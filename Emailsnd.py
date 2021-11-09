@@ -6,7 +6,7 @@ server=smtplib.SMTP('smtp.gmail.com' , 587)
 server.starttls()
 
 server.login("sender_mail", "password")
-subject = 'Error in your web site'
+subject = "Error in your web site"
 
 msg = "Web site is not working"
 
