@@ -5,11 +5,10 @@ import smtplib
 server=smtplib.SMTP('smtp.gmail.com' , 587)
 server.starttls()
 
-server.login("sourabhclasher@gmail.com", "CLASHEr#24@")
-subject = "Error in your web site"
+server.login("sender_mail", "password")
 
 msg = "Web site is not working"
 
-server.sendmail("sourabhclasher@gmail.com", "sourabhmvmo@gmail.com", msg)
+server.sendmail("sender_mail", "receiver_mail", msg)
 print("Email sent successfully!")
 server.quit()
