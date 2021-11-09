@@ -7,7 +7,7 @@ server.starttls()
 
 server.login("sender_mail", "password")
 
-msg = "Web site is not working"
+msg = "There is somthing wrong in your code"
 
 server.sendmail("sender_mail", "receiver_mail", msg)
 print("Email sent successfully!")
